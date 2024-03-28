@@ -1,23 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// React.createElement => Object => render => HTMLElement
-
-const heading = React.createElement(
-  "h1",
-  { id: "heading" },
-  "Namaste React 🚀"
-);
-console.log(heading);
-
-// JSX = is not HTML in JS, it is HTML-like or XML-like
-const jsxHeading = (
+const Title = () => (
   <h1 id="jsxHeading" className="head">
     Namaste React using JSX 🚀
   </h1>
 );
-console.log(jsxHeading);
+
+// React Component
+// Class based Component -> OLD
+// Functional Component -> NEW
+
+// React Functional Component
+const HeadingComponent = () => (
+  <div id="container">
+    <Title />
+    <Title></Title>
+    {Title()}
+    <h1 className="heading">Namaste React Functional Component</h1>
+  </div>
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(jsxHeading);
+root.render(<HeadingComponent />);
