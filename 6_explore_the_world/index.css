@@ -24,12 +24,16 @@
 }
 
 .filter {
-  padding: 10px;
+  display: flex;
 }
 
 .filter-btn {
   margin: 10px;
   cursor: pointer;
+}
+
+.search {
+  padding: 10px;
 }
 
 .restaurant-card {
@@ -54,7 +58,6 @@
 }
 
 .shimmer-container {
-  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
 }
