@@ -4,6 +4,22 @@ import "@testing-library/jest-dom";
 import Contact from "../Contact";
 
 describe("Contact Us Page Heading and Submit Load Test Cases", () => {
+  beforeAll(() => {
+    console.log("Before All");
+  });
+
+  beforeEach(() => {
+    console.log("Before Each");
+  });
+
+  afterAll(() => {
+    console.log("After All");
+  });
+
+  afterEach(() => {
+    console.log("After Each");
+  });
+
   test("should load Contact Us component", () => {
     render(<Contact />);
 
